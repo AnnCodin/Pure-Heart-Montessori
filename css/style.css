@@ -336,3 +336,22 @@ h3 {
   text-align: left;
   border-radius: 25px;
 }
+.main-content3 {
+  width: 100%;
+  height: 800px;
+  background-image:
+    linear-gradient(rgba(75, 13, 130, 0.7), rgba(75, 13, 130, 0.8)),
+    url(/img/premium_photo-1663090910649-e28f98a01b65.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 90px 90px;
+  color: #fff;
+}
+.main-content3 h2 {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 55px;
+  text-align: right;
+  line-height: 70px;
+  padding-bottom: 30px;
+}
