@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Pure Heart Montessori | Homepage</title>
   </head>
   <body>
@@ -23,12 +27,13 @@
             <source src="img/8617460-hd_1920_1080_25fps.mp4" type="video/mp4" />
           </video>
 
-          <nav class="navbar">
+          <nav class="navbar" id="navBar">
             <img
               src="img/pure_heart_montessori_logo.png"
               alt="School Logo"
               class="logo"
             />
+            <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Academics</a></li>
@@ -40,6 +45,7 @@
               <button type="button" class="contact-us">Contact Us</button>
               <button type="button" class="apply-now">Apply Now</button>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
           </nav>
           <div class="herotext-container">
             <div class="hero-text">
@@ -56,5 +62,15 @@
         </div>
       </section>
     </header>
+
+    <!-- <script>
+      let navBar = documdnt.getElementById((id = "navBar"));
+      function showMenu() {
+        navBar.style.right = "0";
+      }
+      function hideMenu() {
+        navBar.style.right = "0";
+      }
+    </script> -->
   </body>
 </html>

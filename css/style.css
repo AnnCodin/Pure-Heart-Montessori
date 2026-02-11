@@ -27,6 +27,7 @@
   cursor: pointer;
 }
 .navbar {
+  position: sticky;
   display: flex;
   width: 85%;
   justify-content: center;
@@ -97,7 +98,6 @@
   font-size: 18px;
   line-height: 30px;
   color: #fff;
-  text-transform: capitalize;
   max-width: 550px;
   padding: 20px 0;
 }
@@ -126,4 +126,71 @@
   border-radius: 30px;
   font-size: 15px;
   font-weight: 600;
+}
+nav .fa {
+  display: none;
+}
+/* Media Queries */
+@media (max-width: 390px) {
+  .logo {
+    width: 80px;
+    margin-right: auto;
+  }
+  .herotext-container {
+    margin: 150px 20px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+    color: #fff;
+    max-width: 250px;
+  }
+  .hero-text p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    max-width: 500px;
+    padding: 15px 0;
+  }
+  .navbar ul li {
+    display: block;
+  }
+  .navbar ul li a {
+    display: none;
+  }
+  .apply-now {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 20px;
+    margin-right: 50px;
+  }
+  .navbar {
+    display: flex;
+    position: absolute;
+    background: rgba(71, 3, 88, 0.7);
+    width: 90%;
+    top: 0;
+    padding: 15px;
+    border-radius: 60px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .contact-us {
+    display: none;
+  }
+  .schedule {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+  .apply-now2 {
+    padding: 10px 40px;
+    font-size: 13px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
 }
