@@ -11,11 +11,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Pure Heart Montessori | Homepage</title>
   </head>
@@ -26,14 +25,12 @@
           <video autoplay loop muted plays-inline class="back-video">
             <source src="img/8617460-hd_1920_1080_25fps.mp4" type="video/mp4" />
           </video>
-
-          <nav class="navbar" id="navBar">
+          <nav class="navbar">
             <img
               src="img/pure_heart_montessori_logo.png"
               alt="School Logo"
               class="logo"
             />
-            <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Academics</a></li>
@@ -45,8 +42,37 @@
               <button type="button" class="contact-us">Contact Us</button>
               <button type="button" class="apply-now">Apply Now</button>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
           </nav>
+
+          <!-- Mobile Navbar-->
+          <div class="mobile-navlinks">
+            <div class="mobile-popover">
+              <button popovertarget="mobile-menu" id="menu-open">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <div popover id="mobile-menu" class="mobileMenuPopover">
+              <button
+                popovertarget="mobile-menu"
+                popovertargetaction="hide"
+                id="menu-close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+
+              <!--Mobile Navlinks-->
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">News & Events</a></li>
+              </ul>
+              <button type="button" class="contact-us">Contact Us</button>
+              <button type="button" class="apply-now">Apply Now</button>
+            </div>
+          </div>
           <div class="herotext-container">
             <div class="hero-text">
               <h1>a world-class education for your child's bright future</h1>
@@ -62,15 +88,5 @@
         </div>
       </section>
     </header>
-
-    <!-- <script>
-      let navBar = documdnt.getElementById((id = "navBar"));
-      function showMenu() {
-        navBar.style.right = "0";
-      }
-      function hideMenu() {
-        navBar.style.right = "0";
-      }
-    </script> -->
   </body>
 </html>
